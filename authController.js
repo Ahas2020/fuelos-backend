@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const supabase = require('../config/supabase');
+const supabase = require('./supabase');
 
 // تسجيل محطة جديدة + مالك
 const register = async (req, res) => {
