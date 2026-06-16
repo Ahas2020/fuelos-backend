@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const auth = require('../middleware/auth');
+const auth = require('./auth');
 
-const { register, login, me } = require('../controllers/authController');
-const { openShift, closeShift, recordSale, recordStoreSale, getTodaySales, getSalesReport } = require('../controllers/salesController');
-const { createDelivery, getDeliveries, getShortageAlert } = require('../controllers/deliveryController');
-const { getDashboard, getDailyReport } = require('../controllers/dashboardController');
+const { register, login, me } = require('./authController');
+const { openShift, closeShift, recordSale, recordStoreSale, getTodaySales, getSalesReport } = require('./salesController');
+const { createDelivery, getDeliveries, getShortageAlert } = require('./deliveryController');
+const { getDashboard, getDailyReport } = require('./dashboardController');
 
 // AUTH
 router.post('/auth/register', register);
