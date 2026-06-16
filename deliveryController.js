@@ -1,4 +1,4 @@
-const supabase = require('../config/supabase');
+const supabase = require('./supabase');
 
 // تسجيل توريد جديد
 const createDelivery = async (req, res) => {
