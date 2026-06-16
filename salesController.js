@@ -1,4 +1,4 @@
-const supabase = require('../config/supabase');
+const supabase = require('./supabase');
 
 // إنشاء وردية جديدة
 const openShift = async (req, res) => {
